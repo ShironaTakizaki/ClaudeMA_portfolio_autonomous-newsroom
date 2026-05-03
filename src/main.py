@@ -9,6 +9,7 @@ Usage:
 import json
 import re
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -130,7 +131,7 @@ Summary: {news['summary']}
 {perspectives}
 
 Return the article body only. No frontmatter. Japanese. 600–900 characters."""
-    return call(system=load_system("writer"), user=prompt)
+    return call(system=load_system("writer"), user=prompt, model="claude-sonnet-4-6")
 
 
 # ── Commands ──────────────────────────────────────────────────────────────────
@@ -142,6 +143,7 @@ def run_publish() -> None:
     print(f"[1/4] curator — selecting news for {today}")
     news = step_curator(today)
     print(f"      → {news['title']}")
+    time.sleep(15)
 
     print("[2/4] zen_retriever — finding lens")
     zen = step_zen_retriever(news["summary"], recently_used)
@@ -156,6 +158,7 @@ def run_publish() -> None:
         lens = zen
         think = None
 
+    time.sleep(15)
     print("[4/4] writer — drafting article")
     body = step_writer(news, lens, today)
 
