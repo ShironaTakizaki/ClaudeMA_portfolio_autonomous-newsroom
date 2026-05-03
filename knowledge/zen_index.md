@@ -13,7 +13,7 @@ they are opened at the moment a question activates them.
 - core: Authority is a composite of "permission + responsibility." The design does not restrict trust — it makes trust retrospectively verifiable.
 - activation_question: When an agent misbehaves, is the root cause a technical permission failure or a normative responsibility failure — and are you treating it as only one of these?
 - unresolved: How delegation chains (orchestrator→worker) avoid the Confused Deputy problem.
-- last_explored: never
+- last_explored: 2026-05-03
 
 ### ZEN-005: The Nature of Logs — Three-Layer Structure
 - cluster: system_design
@@ -118,3 +118,42 @@ they are opened at the moment a question activates them.
 - activation_question: At which layer is the current product being recognized — and is the monetization strategy designed for that layer or a different one?
 - unresolved: Whether revenue recovery in an AI-vs-AI world is possible at the tool layer, or requires platform/infrastructure positioning.
 - last_explored: never
+
+---
+<!-- zen_deep: ZEN-001 (2026-05-03) -->
+# Thinking Pipeline
+
+## 1. Observation
+
+The unresolved question concerns delegation chains in agent systems: when an orchestrator agent invokes a worker agent, the worker may act with the orchestrator's permissions but on behalf of an upstream user/intent. The Confused Deputy problem (Hardy, 1988) occurs when an entity with legitimate authority is tricked into misusing that authority on behalf of a less-privileged caller.
+
+In agent terms: a worker holds permissions granted for purpose X, but receives instructions that exploit those permissions for purpose Y. The worker is not malicious — it is *confused* about whose intent it is serving.
+
+## 2. Assumption surface
+
+ZEN-001 frames authority as `permission + responsibility`. The unresolved question challenges this composite: in a delegation chain, **permission flows downward (orchestrator→worker) but responsibility is ambiguous**. Did the worker act on its own responsibility, or as a transparent extension of the orchestrator? The composite breaks when the two halves travel along different paths.
+
+## 3. Diverge
+
+**Angle A (obvious reading):** Solve Confused Deputy with capability-based security — pass not just permissions but *intent tokens* down the chain, so each worker can verify the purpose of its invocation.
+
+**Angle B (inversion):** The Confused Deputy problem is not a delegation bug — it is the *signature* that responsibility was never actually delegated, only permission was. A worker cannot be "confused" if it carries a clear record of *whose intent* it serves. The problem is not that delegation chains are insecure; it is that we delegate permission without delegating the responsibility-context that gives permission its meaning.
+
+**Angle C (who benefits from this framing?):** Framing this as a "technical capability problem" benefits system designers who want to keep audit logs simple — one actor, one action. Framing it as a "responsibility-attribution problem" forces architects to make delegation chains *narrative*: every action carries the story of why it was taken, on whose behalf, under what original mandate. This is more expensive but it makes misuse legible.
+
+## 4. Converge
+
+Angle B is most generative. It reframes Confused Deputy from "a security flaw to patch" into "a diagnostic that reveals incomplete delegation." If permission travels but responsibility does not, you have built a system where authority *decomposes* under delegation — the worker has the power but not the purpose. This applies far beyond agents: organizational hierarchies, API gateways, contractor chains, military orders. The generative question is: **does your delegation propagate purpose, or only capability?**
+
+## 5. ZEN candidate
+
+```json
+{
+  "interpretation": "The Confused Deputy problem is not a leak in the delegation chain — it is proof that only permission was delegated, never responsibility. ZEN-001's composite (permission + responsibility) does not survive delegation by default; it must be actively reconstructed at each hop. A worker agent that cannot answer 'on whose behalf and for what original purpose am I acting?' is structurally incapable of being responsible, regardless of its technical permissions.",
+  "zen_candidate": {
+    "cluster": "system_design",
+    "core": "Delegation transmits permission by default but transmits responsibility only by design; a delegate that cannot name its principal and purpose has inherited authority's power without its accountability.",
+    "activation_question": "At every hop in your delegation chain, can the delegate answer 'on whose behalf, for what purpose, under what original mandate' — or have you built a chain where permission propagates but responsibility evaporates?"
+  }
+}
+```
