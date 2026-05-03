@@ -64,7 +64,7 @@ def step_curator(today: str) -> dict:
     result = call(
         system=load_system("curator"),
         user=f"Today is {today}. Select one news item. Return JSON only.",
-        tools=[{"type": "web_search_20250305"}],
+        tools=[{"type": "web_search_20250305", "name": "web_search"}],
     )
     # Extract JSON from response
     m = re.search(r'\{[^{}]+\}', result, re.DOTALL)
