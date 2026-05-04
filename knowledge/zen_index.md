@@ -21,7 +21,7 @@ they are opened at the moment a question activates them.
 - core: A log is a device that externalizes thinking to control action, and whose traces serve future context restoration. Layer 1 (cognitive shaping) completes at writing time; Layers 2–3 (self-transmission, accountability) only function when read.
 - activation_question: When compressing or deleting a log, which layer are you destroying — cognitive shaping, context restoration, or audit evidence?
 - unresolved: Whether log interpretation bias accumulates and distorts the reader's judgment.
-- last_explored: never
+- last_explored: 2026-05-04
 
 ### ZEN-013: Agent Expansion — Three-Category Reclassification
 - cluster: system_design
@@ -154,6 +154,40 @@ Angle B is most generative. It reframes Confused Deputy from "a security flaw to
     "cluster": "system_design",
     "core": "Delegation transmits permission by default but transmits responsibility only by design; a delegate that cannot name its principal and purpose has inherited authority's power without its accountability.",
     "activation_question": "At every hop in your delegation chain, can the delegate answer 'on whose behalf, for what purpose, under what original mandate' — or have you built a chain where permission propagates but responsibility evaporates?"
+  }
+}
+```
+
+---
+<!-- zen_deep: ZEN-005 (2026-05-04) -->
+# Thinking Pipeline
+
+## 1. Observation
+ZEN-005 establishes logs as three-layer devices: (1) cognitive shaping at write-time, (2) self-transmission to future-self, (3) audit evidence for others. The unresolved question asks whether re-reading logs creates compounding interpretive bias — whether the reader of logs is being subtly trained by their own past framings.
+
+## 2. Assumption surface
+The assumption being challenged: that logs are *neutral storage*. If Layer 1 completes at writing time (cognitive shaping locks in a frame), then every read in Layers 2–3 re-injects that frame into the reader. The log isn't a record being consulted — it's a frame being reinforced.
+
+## 3. Diverge
+
+**Angle A (obvious):** Yes, bias accumulates. Each re-read of a log reinforces the original interpretation, narrowing the reader's perceptual range. Solution: write logs with epistemic humility markers.
+
+**Angle B (inversion):** The bias isn't a bug — it's the *point*. Logs are designed to stabilize a self across time. Without interpretive lock-in, there is no continuous agent to "restore context" to. The reader needs the bias to remain the same person. Removing bias dissolves identity continuity.
+
+**Angle C (who benefits):** The frame "logs preserve context" benefits the writer-self by granting authority over future-self. The past-self colonizes the future-self through the log. Whoever controls the log's framing controls which interpretations feel like "remembering" versus "reconsidering." This applies equally to organizational logs, git history, meeting minutes — past framings inherit unearned legitimacy simply because they were written down first.
+
+## 4. Converge
+Angle C is most generative. It reframes logs from "memory aid" to "temporal power instrument." The question "does bias accumulate?" becomes "who is colonizing whom across time?" This applies to any persistent record: code comments, design docs, prior decisions cited as precedent, even one's own journal. The principle generalizes: **written-down framings acquire authority disproportionate to their original confidence level.**
+
+## 5. ZEN candidate
+
+```json
+{
+  "interpretation": "ZEN-005's unresolved question dissolves once you see that log bias accumulation is not a side-effect but the mechanism by which past-self exerts authority over future-self. Every re-read is the writer-at-write-time casting a vote in the reader-at-read-time's deliberation — and that vote is weighted heavier than it was when first cast, simply because it has been preserved. The real question is not 'how do I prevent bias?' but 'when should I let my past-self override my present judgment, and when should I treat the log as a hostile witness?'",
+  "zen_candidate": {
+    "cluster": "philosophy",
+    "core": "A log is past-self's instrument of authority over future-self; rereading is not retrieval but a vote in present deliberation, weighted by the false legitimacy that written-down framings acquire over time.",
+    "activation_question": "When this log conflicts with your present judgment, are you correcting drift — or is your past-self colonizing a decision that belongs to who you are now?"
   }
 }
 ```
