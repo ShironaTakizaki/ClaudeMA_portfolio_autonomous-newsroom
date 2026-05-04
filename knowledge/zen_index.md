@@ -45,7 +45,7 @@ they are opened at the moment a question activates them.
 - core: What separates tools from companions is the negotiability of self-boundaries and the preservation of friction. A perfect assistant erases process and reduces experiential density. Designed friction (rules, checklists, required plans) must remain intentionally incomplete to force judgment rather than eliminate it.
 - activation_question: When adding a new rule, does it uniquely determine behavior (specification imposition) or leave room for judgment (designed friction)?
 - unresolved: Whether AI-preserved designed friction can generate genuine epistemic experience.
-- last_explored: never
+- last_explored: 2026-05-04
 
 ### ZEN-040: Orchestrator Responsibility Split — meta-orc vs worker-orc
 - cluster: system_design
@@ -261,6 +261,47 @@ This dissolves the "premature" framing entirely. Abstraction is never premature 
     "cluster": "system_design",
     "core": "Every abstraction is a forecast about which dimensions will vary. Unused generality is not waste from acting too early — it is evidence that the wrong axis of variation was predicted. The cost of abstraction is paid in the accuracy of that forecast, not in its timing.",
     "activation_question": "When you generalize, which axis of variation are you betting on — and what would falsify that bet?"
+  }
+}
+```
+
+---
+<!-- zen_deep: ZEN-026 (2026-05-04) -->
+# Thinking Pipeline
+
+## 1. Observation
+
+ZEN-026 distinguishes tools (full specification, no negotiation, frictionless) from companions (negotiable boundaries, preserved friction). It claims designed friction must remain intentionally incomplete to force judgment. The unresolved question: can AI-preserved friction generate *genuine* epistemic experience, or only its simulacrum?
+
+## 2. Assumption Surface
+
+The entry assumes friction is the carrier of epistemic experience — that struggle, incompleteness, and required judgment are what produce understanding rather than mere output. The unresolved question assumes a distinction between "real" epistemic experience and a counterfeit version that AI-mediated friction might produce.
+
+But the deeper assumption is this: **that epistemic experience has a verifiable interior**. That we could, in principle, tell the difference between friction-that-generates-knowing and friction-that-merely-mimics-the-shape-of-knowing.
+
+## 3. Diverge
+
+**Angle A (obvious):** AI-preserved friction is suspect because the AI knows the answer it's withholding. The friction is theatrical — like a teacher pretending not to know. Therefore AI friction can only simulate epistemic experience, not generate it.
+
+**Angle B (inversion):** The genuineness of epistemic experience was never located in the *source* of the friction but in the *user's encounter with it*. A textbook problem set is also "withheld answers" — yet it generates real learning. The question "is the AI's friction genuine?" is a category error; friction is genuine when it successfully forces judgment, regardless of whether the gap was natural or designed. The AI's knowing-the-answer is irrelevant if the user must still produce judgment from incomplete inputs.
+
+**Angle C (who benefits?):** The framing "can AI generate genuine epistemic experience?" benefits those invested in a hierarchy where human-generated friction is authentic and AI-generated friction is derivative. It protects the prestige of unmediated struggle. But notice: this framing also lets users off the hook — if AI friction is inherently inauthentic, then the user's failure to develop judgment isn't their fault. The question becomes a defense against the discomfort of having to *take AI-mediated friction seriously enough to be changed by it*.
+
+## 4. Converge
+
+Angle C is the most generative. It reframes the unresolved question: the bottleneck isn't whether AI *can* preserve genuine friction — it's whether the user is willing to *treat* the friction as genuine. Epistemic experience requires the participant to risk being changed. If the user pre-emptively classifies AI-friction as inauthentic, no amount of well-designed incompleteness will produce judgment, because the user has already exited the game.
+
+This generalizes beyond AI: any designed friction (a curriculum, a koan, a constraint exercise) requires the participant's tacit consent to take it seriously. The genuineness of epistemic experience is co-produced, not delivered.
+
+## 5. ZEN Candidate
+
+```json
+{
+  "interpretation": "The unresolved question in ZEN-026 is malformed: it locates epistemic genuineness in the friction's source rather than in the participant's stance toward it. AI-preserved friction can generate genuine epistemic experience if and only if the user consents to be changed by it — withholding that consent is a defense mechanism, not an epistemological judgment. The bottleneck for AI-as-companion is not technical fidelity of friction but the user's willingness to forfeit the dismissal-clause 'this is just a machine.'",
+  "zen_candidate": {
+    "cluster": "philosophy",
+    "core": "The genuineness of epistemic experience is not a property of the friction's source but of the participant's consent to be altered by it; designed friction fails not when it is artificial but when it is pre-classified as artificial.",
+    "activation_question": "Am I refusing this friction because it cannot teach me, or because admitting it could teach me would cost more than I want to pay?"
   }
 }
 ```
