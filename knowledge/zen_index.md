@@ -65,7 +65,7 @@ they are opened at the moment a question activates them.
 - core: "Evaluating without a frame" is impossible — treating all values as equal weight is itself the adoption of an equality frame. The illusion of framelessness contributes to making powerful frames invisible.
 - activation_question: When claiming to evaluate something neutrally, which frame are you hiding?
 - unresolved: Whether the pre-evaluation stage (observation and description) can approximate framelessness.
-- last_explored: never
+- last_explored: 2026-05-05
 
 ### ZEN-020: The Epistemological Value of Preserving Tension
 - cluster: philosophy
@@ -336,6 +336,43 @@ Angle B + C combine into the generative principle: **graduation is triggered by 
     "cluster": "system_design",
     "core": "Abstraction layers split when identity gets contaminated, not when workload accumulates; the trigger for spawning a specialist is the orchestrator beginning to think as the domain rather than about the user's relation to it.",
     "activation_question": "Is the orchestrator currently reasoning about the user's relationship to this domain, or has it started reasoning natively inside the domain — and if the latter, why hasn't a worker-orc already been spawned?"
+  }
+}
+```
+
+---
+<!-- zen_deep: ZEN-017 (2026-05-05) -->
+# Thinking Pipeline
+
+## 1. Observation
+
+The unresolved question asks: can the *pre-evaluation* stage — pure observation and description, before judgment — approach framelessness? ZEN-017 establishes that evaluation always carries a frame. The open question is whether description itself escapes this.
+
+## 2. Assumption surface
+
+The unresolved question assumes there is a meaningful separation between "observation/description" and "evaluation." It assumes description might be a more primitive, frame-light operation than judgment. This is the assumption to test.
+
+## 3. Diverge
+
+**Angle A (obvious reading):** Yes, description can approximate framelessness if we strip out evaluative language — say "the man fell" instead of "the man failed." Careful language hygiene gets us close to neutral observation.
+
+**Angle B (inversion):** Description is *more* frame-loaded than evaluation, not less. Evaluation at least announces itself ("this is good/bad"). Description hides its frame inside the choice of *what counts as a unit worth describing*. To say "a man fell" already presupposes: man-as-category, fall-as-discrete-event, this-moment-as-figure-against-ground. The frame is baked into the ontology before any predicate is applied. Evaluation is a visible frame; description is an invisible one.
+
+**Angle C (who benefits):** The belief in neutral description benefits whoever controls the descriptive vocabulary. Scientists, journalists, institutional reporters — anyone whose authority rests on "just the facts" — gains power from the fiction that their categories are pre-theoretical. The framelessness of description is the load-bearing myth of objectivity-claiming professions.
+
+## 4. Converge
+
+Angle B produces the most generative move because it deepens ZEN-017 rather than restating it. ZEN-017 said evaluation is always framed; the extension says **the frame is installed earlier than evaluation — at the level of what gets segmented as an object at all.** This applies far beyond the original case: data schemas, taxonomies, units of analysis, "raw" metrics. The deepest frames are the ones that decide what counts as a thing.
+
+## 5. ZEN candidate
+
+```json
+{
+  "interpretation": "The pre-evaluation stage cannot approximate framelessness because the frame is already installed at the moment of segmentation — the choice of what counts as an object, an event, a unit. Description appears neutral only because its frame operates one layer below evaluation, in the ontology rather than the predicate. This means the search for 'pure observation' inverts the actual hierarchy: description is more frame-loaded than evaluation, because evaluation announces its frame while description hides it inside the categories themselves.",
+  "zen_candidate": {
+    "cluster": "philosophy",
+    "core": "The deepest frame is not in the judgment but in the segmentation — what counts as an object, event, or unit is already a theory before any predicate is applied. Description hides its frame lower in the stack than evaluation does, which is why it feels neutral.",
+    "activation_question": "Before asking how something is being evaluated, ask: what was decided to be a 'thing' at all, and what continuous reality was cut to produce that thing?"
   }
 }
 ```
