@@ -81,7 +81,7 @@ they are opened at the moment a question activates them.
 - core: When a constraint has been internalized through long practice and is then consciously removed, the system may either achieve liberation (acting equivalently without the rule) or suffer regression (losing the problem space the constraint was organizing). These outcomes are structurally different but feel identical from the inside.
 - activation_question: Before removing an internalized constraint, have you run a "trial period without it" to distinguish liberation from regression?
 - unresolved: What observable evidence distinguishes genuine internalization from dependency.
-- last_explored: never
+- last_explored: 2026-05-05
 
 ---
 
@@ -407,6 +407,42 @@ Angle B generates the deepest question because it challenges the unresolved ques
     "cluster": "philosophy",
     "core": "When a tension's epistemological value is constitutive rather than incidental, methodologies that reduce its discomfort do not preserve the tension at lower cost — they replace it with a comfortable simulation that yields neither mode's insight.",
     "activation_question": "Is this discomfort a cost of the inquiry, or is it the inquiry's mode of presentation — such that reducing it would mean reducing what is being learned?"
+  }
+}
+```
+
+---
+<!-- zen_deep: ZEN-021 (2026-05-05) -->
+# Thinking Pipeline
+
+## 1. Observation
+The original ZEN identifies a phenomenon (constraint removal produces two structurally different outcomes that feel identical from inside) and proposes a procedural test (trial period). The unresolved question asks: what is the *observable* signature that lets you tell internalization from dependency — not just by waiting and seeing, but by looking?
+
+## 2. Assumption surface
+The original ZEN assumes the distinction can only be revealed *temporally* — by removing the constraint and watching what happens. The unresolved question challenges this: maybe there are markers visible *while the constraint is still in place* that predict which outcome will occur.
+
+## 3. Diverge
+
+**Angle A (obvious):** Internalization shows up as the practitioner being able to *articulate why* the rule exists — they can reconstruct it from first principles. Dependency shows up as inability to justify the rule beyond "that's how it's done."
+
+**Angle B (inversion):** The articulation test is wrong. Dependent practitioners often *over*-articulate rules (they've memorized the rationale as a separate object). Truly internalized practitioners often can't articulate the rule because it has dissolved into perception — they no longer see the constrained move as a temptation to resist. The signature of internalization is the *absence of effort*, not the presence of justification. Dependency feels like discipline; internalization feels like disinterest.
+
+**Angle C (who benefits):** The framing "is this person internalized or dependent?" benefits institutions that want to grant or withhold autonomy. It treats the practitioner as the unit of analysis. But the constraint may be doing work that isn't located in the practitioner at all — it may be organizing the *environment* (other people's expectations, the shape of available tools, the rhythm of the work). Removing it tests the environment, not the person. "Regression" may simply mean the environment was carrying the constraint and the person never needed to.
+
+## 4. Converge
+Angle B is the most generative because it gives an observable, present-tense signature: **does the constrained action still register as a live option that must be refused, or has it dropped out of the option space entirely?** Dependency keeps the forbidden move *salient* (which is why removing the rule causes regression — the move was being actively suppressed and is now released). Internalization makes the forbidden move *invisible* (which is why removal changes nothing — there was nothing to release).
+
+This generalizes far beyond rules: it applies to habits, ethical commitments, taste, expertise, recovery from addiction, and the difference between a junior who follows style guides and a senior who writes good code without thinking about them.
+
+## 5. ZEN candidate
+
+```json
+{
+  "interpretation": "The distinction between internalization and dependency is observable before removal, not only after. Dependency keeps the forbidden move salient as a temptation actively refused; internalization makes the forbidden move drop out of the option space so completely that there is nothing to refuse. If you still feel the pull of the constrained action, the constraint is still doing work — removing it will produce regression. If the action no longer occurs to you as a candidate, the constraint has dissolved into perception — removing it will change nothing.",
+  "zen_candidate": {
+    "cluster": "philosophy",
+    "core": "Dependency keeps the forbidden move salient as a temptation refused; internalization makes the forbidden move drop out of the option space entirely. The signature of true internalization is not articulate justification but the absence of the move from your felt set of options.",
+    "activation_question": "When you imagine acting without this constraint, does the forbidden move appear as a tempting option you must refuse, or does it not occur to you at all?"
   }
 }
 ```
