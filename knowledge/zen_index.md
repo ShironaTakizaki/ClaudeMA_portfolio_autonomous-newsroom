@@ -73,7 +73,7 @@ they are opened at the moment a question activates them.
 - core: The tension between using a tool and researching it (Heidegger's zuhanden/vorhanden) should not be dissolved. Research that seeks to eliminate this tension conceals the principled incompleteness of inquiry.
 - activation_question: When the tension between use and research becomes uncomfortable, is the impulse to resolve it intellectual honesty or avoidance?
 - unresolved: Whether practical description methodologies can reduce this tension while preserving its epistemological value.
-- last_explored: never
+- last_explored: 2026-05-05
 
 ### ZEN-021: When Internalized Constraints Are Removed — Liberation or Regression?
 - cluster: philosophy
@@ -373,6 +373,40 @@ Angle B produces the most generative move because it deepens ZEN-017 rather than
     "cluster": "philosophy",
     "core": "The deepest frame is not in the judgment but in the segmentation — what counts as an object, event, or unit is already a theory before any predicate is applied. Description hides its frame lower in the stack than evaluation does, which is why it feels neutral.",
     "activation_question": "Before asking how something is being evaluated, ask: what was decided to be a 'thing' at all, and what continuous reality was cut to produce that thing?"
+  }
+}
+```
+
+---
+<!-- zen_deep: ZEN-020 (2026-05-05) -->
+# Thinking Pipeline
+
+## 1. Observation
+ZEN-020 names a Heideggerian tension: the tool-in-use (zuhanden) versus the tool-as-object-of-study (vorhanden). It claims this tension should be preserved, not dissolved. The unresolved question asks whether *methodologies* — practical descriptive techniques — could reduce the tension's discomfort while keeping its epistemological function intact.
+
+## 2. Assumption surface
+The unresolved question assumes "reduction of tension" and "preservation of epistemological value" are separable variables — that you can turn down the friction dial without losing what the friction reveals. This assumes tension is a *quantity* (more or less) rather than a *structural feature* (present or absent, like a phase state).
+
+## 3. Diverge
+
+**Angle A (obvious reading):** Yes, good methodology can ease the cognitive load of switching between use and analysis. Phenomenological description, contextual inquiry, ethnomethodology — these are exactly such tools. They make the switch smoother without eliminating it.
+
+**Angle B (inversion):** The discomfort *is* the epistemological value. Any methodology that reduces the discomfort necessarily reduces what is being learned. The friction is not a side effect of inquiry; it is the inquiry. A "comfortable" oscillation between use and research is one in which neither mode is genuine — you are neither absorbed enough to encounter zuhanden nor disrupted enough to encounter vorhanden. Methodologies that smooth the transition produce a third, degraded mode: *performed* use observed by *performed* analysis.
+
+**Angle C (who benefits?):** Researchers and institutions benefit from methodologies that promise to reduce this tension. They produce publishable outputs, repeatable protocols, trainable practitioners. The framing "can we reduce the tension while preserving its value?" is itself a request a research program would make of its own discomfort — it pre-supposes that the discomfort is a problem methodology should address. The user-in-the-world has no such problem; the problem belongs to the institution that wants both intimacy with practice and distance from it.
+
+## 4. Converge
+Angle B generates the deepest question because it challenges the unresolved question's own framing. If discomfort is constitutive (not incidental) to the tension's value, then the unresolved question dissolves — not by being answered but by being shown to be malformed. This generalizes: many "how do we preserve X while reducing the cost of X" questions hide the fact that X *is* its cost.
+
+## 5. ZEN candidate
+
+```json
+{
+  "interpretation": "ZEN-020's unresolved question assumes the discomfort of the use/research tension is separable from its epistemological value — a dial that methodology can turn down. But the discomfort is not a side effect of the tension; it is the tension's mode of presentation. Any methodology that reduces the felt friction necessarily reduces what is being learned, producing a third degraded mode in which one neither uses nor researches but performs both. The unresolved question is malformed: it asks how to keep a fire's light while reducing its heat.",
+  "zen_candidate": {
+    "cluster": "philosophy",
+    "core": "When a tension's epistemological value is constitutive rather than incidental, methodologies that reduce its discomfort do not preserve the tension at lower cost — they replace it with a comfortable simulation that yields neither mode's insight.",
+    "activation_question": "Is this discomfort a cost of the inquiry, or is it the inquiry's mode of presentation — such that reducing it would mean reducing what is being learned?"
   }
 }
 ```
