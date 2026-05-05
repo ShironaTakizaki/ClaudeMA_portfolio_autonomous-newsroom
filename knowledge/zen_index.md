@@ -53,7 +53,7 @@ they are opened at the moment a question activates them.
 - core: The orchestrator's identity is the refinement of the user model (news curation, binary oppositions, philosophical structure, ZEN distillation). Domain-specific execution (business strategy, writing, local AI research) belongs to specialized worker-orcs. Mixing the two in one agent creates context bloat and identity confusion.
 - activation_question: When the orchestrator takes on a new domain task, is it expanding its identity (correct) or merely accumulating execution responsibilities (symptom of worker-orc absence)?
 - unresolved: The boundary conditions for when a domain task graduates from orc to a dedicated worker-orc.
-- last_explored: never
+- last_explored: 2026-05-05
 
 ---
 
@@ -302,6 +302,40 @@ This generalizes beyond AI: any designed friction (a curriculum, a koan, a const
     "cluster": "philosophy",
     "core": "The genuineness of epistemic experience is not a property of the friction's source but of the participant's consent to be altered by it; designed friction fails not when it is artificial but when it is pre-classified as artificial.",
     "activation_question": "Am I refusing this friction because it cannot teach me, or because admitting it could teach me would cost more than I want to pay?"
+  }
+}
+```
+
+---
+<!-- zen_deep: ZEN-040 (2026-05-05) -->
+# Thinking Pipeline
+
+## 1. Observation
+ZEN-040 establishes that the orchestrator's identity is *user modeling and refinement*, while domain execution belongs to worker-orcs. The unresolved question: **when does a domain task graduate from being handled ad-hoc to deserving its own dedicated worker-orc?**
+
+## 2. Assumption surface
+The hidden assumption: that there's a clean threshold — a moment when "enough" domain work justifies spinning up a worker-orc. This frames the question quantitatively (volume, frequency) rather than structurally.
+
+## 3. Diverge
+
+**Angle A (obvious):** A task graduates when it recurs frequently enough or grows complex enough to warrant dedicated context. Threshold = frequency × complexity.
+
+**Angle B (inversion):** A task graduates not when it's *frequent* but when handling it inside the orchestrator starts *corrupting the user model*. The trigger isn't task-side (volume) but identity-side (contamination). A rare-but-deep task may need an orc immediately; a frequent-but-shallow one may never need one.
+
+**Angle C (who benefits from the framing?):** Framing graduation as a "task volume problem" benefits the orchestrator's inertia — it lets domain responsibilities accumulate silently until "enough" justifies a split. The framing protects the comfortable status quo of mixing. The user benefits from the inverse framing: spawn the orc *before* contamination, not after.
+
+## 4. Converge
+Angle B + C combine into the generative principle: **graduation is triggered by identity contamination, not task accumulation.** The diagnostic isn't "how often does this come up?" but "is the orchestrator starting to think *as* this domain instead of *about* the user's relationship to it?" This applies far beyond worker-orcs — it's the general principle for when any abstraction layer needs to be split.
+
+## 5. ZEN candidate
+
+```json
+{
+  "interpretation": "ZEN-040 leaves graduation as a volume question, but volume is the wrong axis. A domain task graduates to a dedicated worker-orc the moment the orchestrator begins reasoning *from inside* the domain rather than *about* the user's interface to it. The signal is qualitative contamination of the user model, not quantitative accumulation of tasks. Waiting for 'enough' frequency is already too late — the identity has already drifted.",
+  "zen_candidate": {
+    "cluster": "system_design",
+    "core": "Abstraction layers split when identity gets contaminated, not when workload accumulates; the trigger for spawning a specialist is the orchestrator beginning to think as the domain rather than about the user's relation to it.",
+    "activation_question": "Is the orchestrator currently reasoning about the user's relationship to this domain, or has it started reasoning natively inside the domain — and if the latter, why hasn't a worker-orc already been spawned?"
   }
 }
 ```
