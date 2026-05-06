@@ -93,7 +93,7 @@ they are opened at the moment a question activates them.
 - core: Empathy axis (trust in the channel) and solution axis (purchase motivation) must be explicitly separated. The empathy axis has low conversion rate at first contact; the solution axis closes the deal. Mixing them dilutes both.
 - activation_question: In the current funnel, at which stage does the reader encounter the solution axis for the first time — and is that too early or too late?
 - unresolved: Whether the two-stage design (empathy → solution) or full-stage solution consistency produces higher conversion.
-- last_explored: never
+- last_explored: 2026-05-06
 
 ### ZEN-012: The Essence of Persuasion — Designing the Judgment Environment
 - cluster: strategy
@@ -443,6 +443,53 @@ This generalizes far beyond rules: it applies to habits, ethical commitments, ta
     "cluster": "philosophy",
     "core": "Dependency keeps the forbidden move salient as a temptation refused; internalization makes the forbidden move drop out of the option space entirely. The signature of true internalization is not articulate justification but the absence of the move from your felt set of options.",
     "activation_question": "When you imagine acting without this constraint, does the forbidden move appear as a tempting option you must refuse, or does it not occur to you at all?"
+  }
+}
+```
+
+---
+<!-- zen_deep: ZEN-008 (2026-05-06) -->
+I'll work through the thinking pipeline to deepen this ZEN entry.
+
+## 1. Observation
+
+ZEN-008 separates two axes:
+- **Empathy axis**: builds trust in the channel/author, low immediate conversion
+- **Solution axis**: triggers purchase, closes the deal
+
+The unresolved question: does staging them sequentially (empathy first, then solution) outperform keeping the solution visible throughout?
+
+## 2. Assumption surface
+
+The unresolved question assumes these are the only two configurations: **stage them** or **mix them uniformly**. It also assumes "conversion rate" is the right outcome variable — that whichever produces higher conversion wins.
+
+But the deeper assumption is that **the reader is a single static entity progressing through a funnel**. In reality, different readers arrive at different stages of intent. The "right" mix isn't a sequence — it's a *match to reader state*.
+
+## 3. Diverge
+
+**Angle A (obvious)**: Two-stage design wins for cold audiences; full-stage solution consistency wins for warm audiences. The answer is "it depends on traffic source."
+
+**Angle B (inversion)**: The two axes are not actually separable in the reader's mind. What we call "empathy" only builds trust *because* it implicitly demonstrates the solution's worldview. Pure empathy without solution-shape is indistinguishable from any other content — it builds liking, not buying-trust. The "separation" is a writer's tool, not a reader's experience. So full-stage consistency wins, but only if the empathy is *solution-shaped empathy* (empathy that already encodes the solution's frame).
+
+**Angle C (who benefits from this framing?)**: The two-stage model benefits *writers* who find it easier to plan content in phases. It benefits *platforms* that reward sustained engagement before conversion. But it does not necessarily benefit *readers*, who pay an attention tax during the empathy stage and may leave before reaching the solution. The framing protects the writer from the discomfort of "selling too early."
+
+## 4. Converge
+
+Angle B is most generative. It reframes the question from *sequencing* to *coherence*: the empathy axis isn't a separate phase to traverse — it's a frame that must already contain the solution's logic, otherwise trust built in stage 1 doesn't transfer to stage 2.
+
+This generalizes far beyond marketing funnels: any system that separates "build relationship" from "make ask" risks the relationship being built on a frame incompatible with the ask. The trust built must be *the right kind of trust* for the eventual ask.
+
+The generative question becomes: **does the empathy you're building create trust that is convertible to the specific solution you'll offer, or just generic goodwill?**
+
+## 5. ZEN candidate
+
+```json
+{
+  "interpretation": "The unresolved tension in ZEN-008 dissolves when we stop treating empathy and solution as sequential phases and start treating them as coherence requirements. Two-stage design fails not because staging is wrong, but because the empathy stage often builds generic trust that does not convert to the specific ask. Full-stage consistency wins when the empathy itself is solution-shaped — when stage 1 already encodes the worldview that makes stage 2's offer feel inevitable rather than abrupt.",
+  "zen_candidate": {
+    "cluster": "strategy",
+    "core": "Trust is not fungible: empathy built on a frame incompatible with the eventual ask produces goodwill that does not convert. The two axes must share a frame even when they play different roles.",
+    "activation_question": "Does the empathy you are building create the specific kind of trust your solution requires — or merely generic liking that will dissipate at the moment of the ask?"
   }
 }
 ```
