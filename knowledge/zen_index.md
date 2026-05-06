@@ -109,7 +109,7 @@ they are opened at the moment a question activates them.
 - core: The gap between what you can create and what actually reaches people is not determined by difficulty but by completeness. "Reached" must be defined before reach can be designed — and the three candidate definitions (physical delivery, comprehension, question activation) produce different design strategies.
 - activation_question: What is your minimum definition of "reached" — and is your current output designed to achieve it?
 - unresolved: Which definition of "reached" (comprehension vs. question-activation) is more designable in practice.
-- last_explored: never
+- last_explored: 2026-05-06
 
 ### ZEN-029: AI Product Recognition — Three-Layer Structure and Wu Wei
 - cluster: strategy
@@ -531,6 +531,45 @@ The completion/dissolution question is unanswerable from the persuader's side be
     "cluster": "philosophy",
     "core": "The ethics of influence cannot be settled from the influencer's side. Whether an act was persuasion, collaboration, or teaching is a recipient-side question, answered by whether they can defend the resulting judgment on their own terms without citing you.",
     "activation_question": "If the person you influenced had to defend their conclusion to a stranger tomorrow — without invoking your name, your frame, or your transparency — could they?"
+  }
+}
+```
+
+---
+<!-- zen_deep: ZEN-016 (2026-05-06) -->
+# Thinking Pipeline
+
+## 1. Observation
+
+ZEN-016 distinguishes three definitions of "reached": physical delivery, comprehension, and question-activation. The unresolved question asks which of the latter two is more *designable in practice* — meaning, which can be reliably engineered through design choices versus which depends on factors outside the designer's control.
+
+## 2. Assumption surface
+
+The unresolved question assumes that "designability" is a property of the target itself (comprehension vs. question-activation). But designability might actually be a property of the **feedback loop** available for that target. You can only design what you can measure, and you can only measure what produces a detectable signal.
+
+## 3. Diverge
+
+**Angle A (obvious):** Comprehension is more designable because it's closer to the content. You control the words; you can test for understanding through quizzes, summaries, paraphrase. Question-activation depends on the reader's internal state, which you don't control.
+
+**Angle B (inversion):** Question-activation is more designable because it has a *binary, observable signal*: did the reader ask a new question or not? Comprehension is a fog — readers routinely report "I understood" while having absorbed nothing. The signal for comprehension is corruptible (politeness, self-deception, illusion of explanatory depth). The signal for question-activation is harder to fake because a real question has specificity that performance lacks.
+
+**Angle C (who benefits?):** The framing "comprehension is the goal" benefits institutions that need to certify transmission (schools, corporate training, publishers). The framing "question-activation is the goal" benefits thinkers who want their work to compound in others. The choice of definition encodes whose success criteria you're optimizing for — and most defaults are inherited from the institutional framing without inspection.
+
+## 4. Converge
+
+Angle B is the most generative because it reframes "designability" as a function of signal quality, not target proximity. This produces a principle that applies to any creative output where impact is uncertain: **don't optimize for the target closest to your output; optimize for the target with the cleanest feedback signal.** Comprehension feels closer but is epistemically muddier than question-activation.
+
+This extends ZEN-016 by resolving the unresolved tension: question-activation is more designable in practice, not because it's easier to cause, but because its success signal is less corruptible.
+
+## 5. ZEN candidate
+
+```json
+{
+  "interpretation": "The unresolved question in ZEN-016 dissolves once you stop asking 'which target is easier to hit' and start asking 'which target produces a signal you can trust.' Comprehension feels designable because it sits next to the content, but its signal is corrupted by politeness, the illusion of explanatory depth, and self-reported understanding. Question-activation, though it depends on the reader's internal state, produces a binary, specific, hard-to-fake artifact: a real question the reader didn't have before. Therefore question-activation is more designable in practice — not because it's easier to cause, but because you can tell when you've caused it.",
+  "zen_candidate": {
+    "cluster": "system_design",
+    "core": "Designability is not proximity to the output; it is cleanliness of the feedback signal. The target you can detect is the target you can design for, even if it sits further from your hands than a closer target with a corrupted signal.",
+    "activation_question": "For the outcome you're trying to design, what would count as evidence you achieved it — and is that evidence fakeable by the recipient (or by your own wishful reading)?"
   }
 }
 ```
