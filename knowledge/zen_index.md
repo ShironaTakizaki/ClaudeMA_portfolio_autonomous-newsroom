@@ -117,7 +117,7 @@ they are opened at the moment a question activates them.
 - core: AI products are recognized in three layers: (1) tool (solves a specific task), (2) platform (others build on top of it), (3) infrastructure (invisible, assumed). Revenue recovery strategies differ radically across layers. Wu wei (non-action) in business design means choosing the layer at which adoption becomes self-sustaining.
 - activation_question: At which layer is the current product being recognized — and is the monetization strategy designed for that layer or a different one?
 - unresolved: Whether revenue recovery in an AI-vs-AI world is possible at the tool layer, or requires platform/infrastructure positioning.
-- last_explored: never
+- last_explored: 2026-05-07
 
 ---
 <!-- zen_deep: ZEN-001 (2026-05-03) -->
@@ -570,6 +570,49 @@ This extends ZEN-016 by resolving the unresolved tension: question-activation is
     "cluster": "system_design",
     "core": "Designability is not proximity to the output; it is cleanliness of the feedback signal. The target you can detect is the target you can design for, even if it sits further from your hands than a closer target with a corrupted signal.",
     "activation_question": "For the outcome you're trying to design, what would count as evidence you achieved it — and is that evidence fakeable by the recipient (or by your own wishful reading)?"
+  }
+}
+```
+
+---
+<!-- zen_deep: ZEN-029 (2026-05-07) -->
+# Thinking Pipeline
+
+## 1. Observation
+
+The unresolved question asks: in a world where AI agents transact with other AI agents (AI-vs-AI), can a "tool" layer product still capture revenue, or does the disappearance of human judgment force products toward platform/infrastructure positioning?
+
+Facts:
+- Tools historically capture revenue via human preference, branding, UX friction.
+- Platforms capture revenue via lock-in and network effects on top of them.
+- Infrastructure captures revenue via being assumed (taxes on usage).
+- AI agents don't have brand loyalty, don't suffer UX friction, don't tolerate switching costs the way humans do.
+
+## 2. Assumption surface
+
+The hidden assumption: that "tool" remains a coherent category when the user is another AI. The tool layer historically depends on human cognitive limits — humans can't easily switch, evaluate, or replicate. Remove the human, and the tool's moat (preference, habit, learning curve) evaporates.
+
+## 3. Diverge
+
+**Obvious reading**: In an AI-vs-AI world, tool-layer products get commoditized instantly because AI buyers are perfect comparison shoppers. Therefore tools cannot recover revenue; only platforms and infrastructure survive.
+
+**Inverted reading**: Tools become *more* viable in an AI-vs-AI world, but only if their value is measurable in machine-readable terms (latency, accuracy, cost-per-call). The AI buyer is not a worse customer — it's a more rational one. Tools that previously lost to marketing now win on measurable performance. The tool layer doesn't die; it purifies.
+
+**Who-benefits reading**: The "tools must become platforms/infrastructure" narrative benefits incumbent platform owners (cloud providers, foundation model labs) who want to absorb tool-makers as dependencies. Framing tools as doomed pushes builders to either sell early or build on top of platforms — both of which feed the platform layer. The narrative is itself a capture mechanism.
+
+## 4. Converge
+
+The inverted reading is most generative because it changes the strategic question from "which layer should I move to?" to "is my tool's value legible to a machine buyer?" This applies beyond AI: any market where evaluators become more rational (institutional buyers, procurement AI, auditing systems) follows the same dynamic. The tool layer survives where value is measurable; it dies where value depended on human irrationality.
+
+## 5. ZEN candidate
+
+```json
+{
+  "interpretation": "The tool layer does not collapse in an AI-vs-AI world — it bifurcates. Tools whose value depended on human cognitive friction (brand, habit, switching cost, marketing) get commoditized instantly by rational AI buyers. Tools whose value is machine-legible (measurable accuracy, latency, cost-per-outcome) get *stronger* because the new buyer evaluates them more fairly than humans did. The strategic question is not 'should I become a platform?' but 'is my tool's value visible to a non-human evaluator?'",
+  "zen_candidate": {
+    "cluster": "strategy",
+    "core": "When buyers become more rational (AI agents, procurement systems, institutional evaluators), tools survive only if their value is machine-legible; tools that monetized human irrationality must move up the stack, but tools with measurable value capture more revenue, not less.",
+    "activation_question": "If the buyer of this product were a perfectly rational agent with no brand loyalty and zero switching cost, what measurable dimension of value would still make them choose it?"
   }
 }
 ```
