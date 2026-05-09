@@ -616,3 +616,10 @@ The inverted reading is most generative because it changes the strategic questio
   }
 }
 ```
+
+### ZEN-GENERATED (2026-05-09)
+- cluster: system_design
+- type: generated
+- core: Optimization for the common case silently borrows from the failure case, and the loan only comes due under stress.
+- activation_question: Where has performance tuning quietly eroded a redundancy we still believe we have?
+- last_explored: 2026-05-09
