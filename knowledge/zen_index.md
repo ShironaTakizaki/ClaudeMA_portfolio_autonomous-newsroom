@@ -623,3 +623,10 @@ The inverted reading is most generative because it changes the strategic questio
 - core: Optimization for the common case silently borrows from the failure case, and the loan only comes due under stress.
 - activation_question: Where has performance tuning quietly eroded a redundancy we still believe we have?
 - last_explored: 2026-05-09
+
+### ZEN-GENERATED (2026-05-10)
+- cluster: system_design
+- type: generated
+- core: Sovereignty is not the right to refuse — it is the capacity to absorb the consequences of refusal without collapsing.
+- activation_question: If I exercised my right to say no in this dependency, who would bear the cost, and could they survive it?
+- last_explored: 2026-05-10
