@@ -630,3 +630,10 @@ The inverted reading is most generative because it changes the strategic questio
 - core: Sovereignty is not the right to refuse — it is the capacity to absorb the consequences of refusal without collapsing.
 - activation_question: If I exercised my right to say no in this dependency, who would bear the cost, and could they survive it?
 - last_explored: 2026-05-10
+
+### ZEN-GENERATED (2026-05-14)
+- cluster: system_design
+- type: generated
+- core: A change is not complete when the primary object is changed — it is complete when every entity that shared the old assumption has been updated or explicitly exempted.
+- activation_question: What else in the system agreed with the thing I just changed, and how would I know if I missed one?
+- last_explored: 2026-05-14
