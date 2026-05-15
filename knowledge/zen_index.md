@@ -637,3 +637,10 @@ The inverted reading is most generative because it changes the strategic questio
 - core: A change is not complete when the primary object is changed — it is complete when every entity that shared the old assumption has been updated or explicitly exempted.
 - activation_question: What else in the system agreed with the thing I just changed, and how would I know if I missed one?
 - last_explored: 2026-05-14
+
+### ZEN-GENERATED (2026-05-15)
+- cluster: system_design
+- type: generated
+- core: A defense that cannot distinguish operator error from adversary action makes operator competence a failure mode of equal severity to the attack it prevents.
+- activation_question: If this security mechanism activates correctly because of our own mistake, what is the blast radius, and is it smaller than the attack we are defending against?
+- last_explored: 2026-05-15
